@@ -1,8 +1,8 @@
 import { useState } from "react";
 
-import RgbSlider from "./RgbSlider";
+import RgbSlider from "../features/RgbSlider";
 
-const BoxShadow = () => {
+const BoxShadowPage = () => {
   const [rightShift, setRightShift] = useState(5);
   const [downShift, setDownShift] = useState(5);
   const [spread, setSpread] = useState(5);
@@ -122,4 +122,4 @@ const BoxShadow = () => {
   );
 };
 
-export default BoxShadow;
+export default BoxShadowPage;
