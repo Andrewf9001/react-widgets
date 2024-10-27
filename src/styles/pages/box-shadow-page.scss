@@ -3,5 +3,49 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  margin-top: 4%;
+
+  .preview-box-wrapper {
+    height: 150px;
+    width: 200px;
+    margin-bottom: 80px;
+    background-color: #fff;
+  }
+
+  .sliders-wrapper {
+    display: grid;
+    grid-template-rows: 1fr;
+    width: 35%;
+    margin-bottom: 20px;
+
+    .range-wrapper {
+      display: flex;
+      justify-content: space-between;
+
+      input {
+        width: 100%;
+      }
+
+      .left-label {
+        width: 130px;
+      }
+
+      .right-label {
+        text-align: right;
+        width: 50px;
+      }
+    }
+  }
+
+  .inset-rgb-slider-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .copy-input {
+    font-size: 1.2em;
+    margin-top: 1%;
+  }
 }
