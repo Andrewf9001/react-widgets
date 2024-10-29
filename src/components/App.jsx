@@ -1,8 +1,9 @@
 import { Route, Routes } from "react-router-dom";
 
+import PhotoTransformer from "./pages/PhotoTransformer";
 import BoxShadowPage from "./pages/BoxShadowPage";
-import Homepage from "./pages/Homepage";
 import Navbar from "./navigation/Navbar";
+import Homepage from "./pages/Homepage";
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/box-shadow" element={<BoxShadowPage />} />
+        <Route path="/photo-transformer" element={<PhotoTransformer />} />
       </Routes>
     </div>
   );
