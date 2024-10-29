@@ -12,12 +12,13 @@ const PhotoTransformer = () => {
 
   return (
     <div className="photo-transformer-container">
-      <div src={BackgroundImg} className="img background-img"></div>
+      <div src={BackgroundImg} className="img background-img" />
+
       <div
         src={ForegroundImg}
         className="img foreground-img"
         style={{ width: `${sliderVal}%` }}
-      ></div>
+      />
 
       <input
         id="slider"
