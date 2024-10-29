@@ -1,7 +1,7 @@
 import { useState } from "react";
 
-import BackgroundImg from "../../static/images/colors.jpeg";
-import ForegroundImg from "../../static/images/colors-modified.jpeg";
+import BackgroundImg from "../../assets/images/colors.jpeg";
+import ForegroundImg from "../../assets/images/colors-modified.jpeg";
 
 const PhotoTransformer = () => {
   const [sliderVal, setSliderVal] = useState(50);
