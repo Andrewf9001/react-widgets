@@ -7,6 +7,7 @@ const Navbar = () => {
 
       <NavLink to="/box-shadow">Box Shadow</NavLink>
       <NavLink to="/photo-transformer">Photo Transformer</NavLink>
+      <NavLink to="/random-hex">Random Hex</NavLink>
     </div>
   );
 };
