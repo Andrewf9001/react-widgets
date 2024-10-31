@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { numberLetters } from "../helpers/helperArrays";
+import { numberLetters } from "../../helpers/arrayHelpers";
 
 const RandomHex = () => {
   const [hexColor, setHexColor] = useState("");
