@@ -1,6 +1,11 @@
 .random-hex-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  height: calc(100vh - 33px);
+
+  .random-hex-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
 }

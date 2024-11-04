@@ -19,8 +19,11 @@ const RandomHex = () => {
 
   return (
     <div className="random-hex-container">
-      <h1>#{hexColor}</h1>
-      <button onClick={mapRandomHex}>Randomize!</button>
+      <div className="random-hex-wrapper">
+        <h1>#{hexColor}</h1>
+
+        <button onClick={mapRandomHex}>Randomize!</button>
+      </div>
     </div>
   );
 };
