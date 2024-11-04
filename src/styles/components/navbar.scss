@@ -1,7 +1,9 @@
 .navbar-container {
   display: flex;
   justify-content: flex-start;
+  align-items: center;
   gap: 2%;
+  height: 30px;
 
   a {
     color: black;
