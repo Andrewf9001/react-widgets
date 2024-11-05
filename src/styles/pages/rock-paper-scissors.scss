@@ -24,7 +24,9 @@
   }
 
   .game-btn-wrapper {
-    @include flex-center();
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 25px;
 
     svg {
