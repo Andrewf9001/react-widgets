@@ -1,13 +1,13 @@
 import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import { rockPaperScissors } from "../helpers/helperArrays";
-
 const RockPaperScissors = () => {
   const [playerChoice, setPlayerChoice] = useState("");
   const [compChoice, setCompChoice] = useState("");
   const [winner, setWinner] = useState("");
   const [showComp, setShowComp] = useState(false);
+
+  const rockPaperScissors = ["Rock", "Paper", "Scissors"];
 
   const gameResults = () => {
     setShowComp(true);
