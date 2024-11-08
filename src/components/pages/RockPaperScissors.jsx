@@ -12,21 +12,23 @@ const RockPaperScissors = () => {
   const gameResults = () => {
     setShowComp(true);
 
-    if (playerChoice === "Rock" && compChoice === "Scissors") {
-      setWinner("Player Wins!");
-    } else if (playerChoice === "Rock" && compChoice === "Paper") {
-      setWinner("Computer Wins!");
-    } else if (playerChoice === "Scissors" && compChoice === "Paper") {
-      setWinner("Player Wins!");
-    } else if (playerChoice === "Scissors" && compChoice === "Rock") {
-      setWinner("Computer Wins!");
-    } else if (playerChoice === "Paper" && compChoice === "Rock") {
-      setWinner("Player Wins!");
-    } else if (playerChoice === "Paper" && compChoice === "Scissors") {
-      setWinner("Computer Wins!");
-    } else {
-      setWinner("Tie Game!");
-    }
+    setWinner(() => {
+      if (playerChoice === "Rock" && compChoice === "Scissors") {
+        return "Player Wins!";
+      } else if (playerChoice === "Rock" && compChoice === "Paper") {
+        return "Computer Wins!";
+      } else if (playerChoice === "Scissors" && compChoice === "Paper") {
+        return "Player Wins!";
+      } else if (playerChoice === "Scissors" && compChoice === "Rock") {
+        return "Computer Wins!";
+      } else if (playerChoice === "Paper" && compChoice === "Rock") {
+        return "Player Wins!";
+      } else if (playerChoice === "Paper" && compChoice === "Scissors") {
+        return "Computer Wins!";
+      } else {
+        return "Tie Game!";
+      }
+    });
   };
 
   const compPick = () => {
@@ -39,7 +41,6 @@ const RockPaperScissors = () => {
     setPlayerChoice("");
     setCompChoice("");
     setWinner("");
-    // setShowComp(false);
   };
 
   useEffect(() => {
