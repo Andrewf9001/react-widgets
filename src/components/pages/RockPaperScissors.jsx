@@ -42,7 +42,7 @@ const RockPaperScissors = () => {
     // setShowComp(false);
   };
 
-  useEffect(async () => {
+  useEffect(() => {
     compPick();
     setShowComp(false);
   }, [playerChoice]);
