@@ -22,6 +22,7 @@ const App = () => {
         <Route path="/photo-transformer" element={<PhotoTransformer />} />
         <Route path="/random-hex" element={<RandomHex />} />
         <Route path="/rock-paper-scissors" element={<RockPaperScissors />} />
+        {/* <Route path="/notes" element={<Notes />} /> */}
       </Routes>
     </div>
   );
