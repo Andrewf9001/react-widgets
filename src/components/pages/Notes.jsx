@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import "../styles/main.scss";
-
 const Notes = () => {
   const [currentNote, setCurrentNote] = useState(null);
   const [newNoteShow, setNewNoteShow] = useState(false);
@@ -41,7 +39,7 @@ const Notes = () => {
   };
 
   return (
-    <div className="notes-wrapper">
+    <div className="notes-container">
       <div className="left-column">
         <div className="add-remove-btns">
           <div className="add-note">

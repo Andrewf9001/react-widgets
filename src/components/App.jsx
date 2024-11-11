@@ -6,6 +6,7 @@ import BoxShadowPage from "./pages/BoxShadowPage";
 import RandomHex from "./pages/RandomHex";
 import Navbar from "./navigation/Navbar";
 import Homepage from "./pages/Homepage";
+import Notes from "./pages/Notes";
 
 import solidIcons from "../assets/icons/solidIcons";
 
@@ -22,7 +23,7 @@ const App = () => {
         <Route path="/photo-transformer" element={<PhotoTransformer />} />
         <Route path="/random-hex" element={<RandomHex />} />
         <Route path="/rock-paper-scissors" element={<RockPaperScissors />} />
-        {/* <Route path="/notes" element={<Notes />} /> */}
+        <Route path="/notes" element={<Notes />} />
       </Routes>
     </div>
   );

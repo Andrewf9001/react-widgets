@@ -6,6 +6,8 @@ import {
   faHandBackFist,
   faHand,
   faHandScissors,
+  faPlusSquare,
+  faTrashAlt,
 } from "@fortawesome/free-solid-svg-icons";
 
 const solidIcons = () => {
@@ -14,7 +16,9 @@ const solidIcons = () => {
     faArrowDown,
     faHandBackFist,
     faHand,
-    faHandScissors
+    faHandScissors,
+    faPlusSquare,
+    faTrashAlt
   );
 };
 
