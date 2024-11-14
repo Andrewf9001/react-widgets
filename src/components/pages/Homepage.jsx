@@ -3,7 +3,7 @@ const Homepage = () => {
     <div className="homepage-container">
       <h1>React Widgets!</h1>
 
-      <div>render widget links</div>
+      <div>Select a link to use a widget!</div>
     </div>
   );
 };
