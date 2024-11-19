@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 
-import RecipeCard from "./recipeCard";
-import "../styles/main.scss";
+import RecipeCard from "../features/RecipeCard";
 
 const Recipe = () => {
   const [query, setQuery] = useState("");
