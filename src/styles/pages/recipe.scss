@@ -1,0 +1,108 @@
+.recipe-form-wrapper {
+  form {
+    display: flex;
+    justify-content: center;
+    margin-top: 65px;
+    margin-bottom: 20px;
+
+    label {
+      text-transform: capitalize;
+    }
+
+    input {
+      @include font();
+      font-size: 15px;
+      margin-left: 20px;
+      width: 150px;
+      border: 1px solid black;
+      border-radius: 3px;
+      background: transparent;
+      outline: none;
+    }
+  }
+}
+
+.recipe-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  .recipe-card-wrapper {
+    width: 65%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 25px;
+    border: black solid 1px;
+    background: linear-gradient(
+      90deg,
+      rgba(249, 223, 132, 1) 0%,
+      rgba(249, 235, 188, 1) 100%
+    );
+    border-radius: 3px;
+    box-shadow: 0px 5px 20px 4px rgba(0, 0, 0, 0.37);
+
+    .recipe-title {
+      @include flex-recipe();
+      @include recipe-font();
+      font-size: 25px;
+      padding-bottom: 10px;
+    }
+
+    .area {
+      padding-right: 10px;
+    }
+
+    .tag-wrapper {
+      @include flex-recipe();
+      color: darkgray;
+      padding-bottom: 10px;
+    }
+
+    .ingredients-measurements-wrapper {
+      @include flex-recipe();
+      padding-bottom: 20px;
+
+      .ingredients-wrapper {
+        padding-right: 60px;
+
+        .title {
+          font-size: 18px;
+          text-align: center;
+          text-decoration: underline;
+          padding-bottom: 10px;
+        }
+
+        .ingredient-items {
+          @include recipe-font();
+        }
+      }
+
+      .measurements-wrapper {
+        .title {
+          font-size: 18px;
+          text-align: center;
+          text-decoration: underline;
+          padding-bottom: 10px;
+        }
+
+        div {
+          padding-left: 30px;
+        }
+      }
+    }
+
+    .instructions {
+      .title {
+        @include flex-recipe();
+        padding-bottom: 5px;
+        padding-top: 10px;
+        text-decoration: underline;
+      }
+
+      .recipe-instruction {
+        font-family: "Kalam", cursive;
+      }
+    }
+  }
+}
