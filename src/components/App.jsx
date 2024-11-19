@@ -9,6 +9,7 @@ import Homepage from "./pages/Homepage";
 import Notes from "./pages/Notes";
 
 import solidIcons from "../assets/icons/solidIcons";
+import Recipe from "./pages/Recipe";
 
 solidIcons();
 
@@ -24,6 +25,7 @@ const App = () => {
         <Route path="/random-hex" element={<RandomHex />} />
         <Route path="/rock-paper-scissors" element={<RockPaperScissors />} />
         <Route path="/notes" element={<Notes />} />
+        <Route path="/recipe" element={<Recipe />} />
       </Routes>
     </div>
   );
