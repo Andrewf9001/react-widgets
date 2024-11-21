@@ -35,7 +35,6 @@ const RockPaperScissors = () => {
     const computerChoice =
       rockPaperScissors[Math.floor(Math.random() * rockPaperScissors.length)];
 
-    // setCompChoice(computerChoice);
     return computerChoice;
   }, [rockPaperScissors]);
 
@@ -46,8 +45,6 @@ const RockPaperScissors = () => {
   };
 
   useEffect(() => {
-    // const compChoice = compPick;
-
     setCompChoice(compPick);
     setShowComp(false);
   }, [playerChoice, compPick]);
