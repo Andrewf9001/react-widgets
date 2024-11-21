@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const RockPaperScissors = () => {
@@ -7,7 +7,7 @@ const RockPaperScissors = () => {
   const [winner, setWinner] = useState("");
   const [showComp, setShowComp] = useState(false);
 
-  const rockPaperScissors = ["Rock", "Paper", "Scissors"];
+  const rockPaperScissors = useMemo(() => ["Rock", "Paper", "Scissors"], []);
 
   const gameResults = () => {
     setShowComp(true);
@@ -31,11 +31,13 @@ const RockPaperScissors = () => {
     });
   };
 
-  const compPick = () => {
-    setCompChoice(
-      rockPaperScissors[Math.floor(Math.random() * rockPaperScissors.length)]
-    );
-  };
+  const compPick = useMemo(() => {
+    const computerChoice =
+      rockPaperScissors[Math.floor(Math.random() * rockPaperScissors.length)];
+
+    // setCompChoice(computerChoice);
+    return computerChoice;
+  }, [rockPaperScissors]);
 
   const handleResetGame = () => {
     setPlayerChoice("");
@@ -44,9 +46,11 @@ const RockPaperScissors = () => {
   };
 
   useEffect(() => {
-    compPick();
+    // const compChoice = compPick;
+
+    setCompChoice(compPick);
     setShowComp(false);
-  }, [playerChoice]);
+  }, [playerChoice, compPick]);
 
   return (
     <div className="rock-paper-scissors-container">
