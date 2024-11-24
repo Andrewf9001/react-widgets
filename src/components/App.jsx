@@ -10,6 +10,7 @@ import Notes from "./pages/Notes";
 
 import solidIcons from "../assets/icons/solidIcons";
 import Recipe from "./pages/Recipe";
+import TodoPage from "./pages/todoPage";
 
 solidIcons();
 
@@ -26,6 +27,7 @@ const App = () => {
         <Route path="/rock-paper-scissors" element={<RockPaperScissors />} />
         <Route path="/notes" element={<Notes />} />
         <Route path="/recipe" element={<Recipe />} />
+        <Route path="/todos" element={<TodoPage />} />
       </Routes>
     </div>
   );

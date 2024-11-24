@@ -11,6 +11,7 @@ const Navbar = () => {
       <NavLink to="/rock-paper-scissors">Rock Paper Scissors</NavLink>
       <NavLink to="/notes">Notes</NavLink>
       <NavLink to="/recipe">Recipe</NavLink>
+      <NavLink to="/todos">Todos</NavLink>
     </div>
   );
 };
