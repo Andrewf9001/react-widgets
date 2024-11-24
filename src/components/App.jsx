@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import RockPaperScissors from "./pages/RockPaperScissors";
 import PhotoTransformer from "./pages/PhotoTransformer";
 import BoxShadowPage from "./pages/BoxShadowPage";
+import TodosPage from "./pages/TodosPage";
 import RandomHex from "./pages/RandomHex";
 import Navbar from "./navigation/Navbar";
 import Homepage from "./pages/Homepage";
@@ -10,7 +11,6 @@ import Notes from "./pages/Notes";
 
 import solidIcons from "../assets/icons/solidIcons";
 import Recipe from "./pages/Recipe";
-import TodoPage from "./pages/todoPage";
 
 solidIcons();
 

@@ -1,4 +1,4 @@
-const TodoPage = () => {
+const TodosPage = () => {
   return (
     <div className="todo-page-container">
       <h1>Todos Page</h1>
@@ -6,4 +6,4 @@ const TodoPage = () => {
   );
 };
 
-export default TodoPage;
+export default TodosPage;
