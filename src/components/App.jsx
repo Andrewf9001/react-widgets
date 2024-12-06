@@ -27,7 +27,7 @@ const App = () => {
         <Route path="/rock-paper-scissors" element={<RockPaperScissors />} />
         <Route path="/notes" element={<Notes />} />
         <Route path="/recipe" element={<Recipe />} />
-        <Route path="/todos" element={<TodoPage />} />
+        <Route path="/todos" element={<TodosPage />} />
       </Routes>
     </div>
   );
